@@ -1,8 +1,13 @@
 # Aplikasi Cupcake
 
-![Cupcake](cupcake_image.jpg)
+![Cupcake](cupcake_image.png)
 
 Selamat datang di Aplikasi Cupcake, tempat Anda dapat dengan mudah memesan cupcakes lezat sesuai keinginan Anda. Aplikasi ini memiliki alur pemesanan yang sederhana, dengan opsi untuk memilih jumlah cupcakes, rasa favorit Anda, dan tanggal pengambilan. 
+## Tampilan Aplikasi 
+![Run and build](1.%20Run%20and%20build.jpg)
+![Order 1 cupcakes](2.%20Order%201%20cupcakes.jpg)
+![Order 6 cupcakes](2.%20Order%206%20cupcakes.jpg)
+![Order 12 cupcakes](2.%20Order%2012%20cupcakes.jpg)
 
 ## Fitur Utama
 - Pemesanan mudah dan cepat.
