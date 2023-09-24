@@ -61,7 +61,7 @@ enum class CupcakeScreen(@StringRes val title: Int) {
 }
 
 /**
- * Composable that displays the topBar and displays back button if back navigation is possible.
+ * Composable ini bertujuan untuk menampilkan bilah bar dan navigasi back bar
  */
 @Composable
 fun CupcakeAppBar(
@@ -172,7 +172,7 @@ fun CupcakeApp(
 }
 
 /**
- * Resets the [OrderUiState] and pops up to [CupcakeScreen.Start]
+ *  berfungsi untuk menghapus atau mengatur ulang data pesanan yang ada
  */
 private fun cancelOrderAndNavigateToStart(
     viewModel: OrderViewModel,
@@ -183,7 +183,7 @@ private fun cancelOrderAndNavigateToStart(
 }
 
 /**
- * Creates an intent to share order details
+ * Berfungsi untuk membuat data pesanan untuk dibagikan ke platform lain
  */
 private fun shareOrder(context: Context, subject: String, summary: String) {
     // Create an ACTION_SEND implicit intent with order details in the intent extras
