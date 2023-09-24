@@ -41,10 +41,7 @@ import com.example.cupcake.R
 import com.example.cupcake.ui.components.FormattedPriceLabel
 
 /**
- * Composable that displays the list of items as [RadioButton] options,
- * [onSelectionChanged] lambda that notifies the parent composable when a new value is selected,
- * [onCancelButtonClicked] lambda that cancels the order when user clicks cancel and
- * [onNextButtonClicked] lambda that triggers the navigation to next screen
+Composable dibawah ini fungsinya mengatur daftar item
  */
 @Composable
 fun SelectOptionScreen(
@@ -110,7 +107,7 @@ fun SelectOptionScreen(
             }
             Button(
                 modifier = Modifier.weight(1f),
-                // the button is enabled when the user makes a selection
+                // tombol ini akan berfungsi ketika pelanggan menentukan pilihannya
                 enabled = selectedValue.isNotEmpty(),
                 onClick = onNextButtonClicked
             ) {
