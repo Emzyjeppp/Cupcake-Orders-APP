@@ -1,24 +1,29 @@
-Cupcake app
-=================================
+# Aplikasi Cupcake
 
-This app contains an order flow for cupcakes with options for quantity, flavor, and pickup date.
-The order details get displayed on an order summary screen and can be shared to another app to
-send the order.
+![Cupcake](cupcake_image.jpg)
 
-TODO
+Selamat datang di Aplikasi Cupcake, tempat Anda dapat dengan mudah memesan cupcakes lezat sesuai keinginan Anda. Aplikasi ini memiliki alur pemesanan yang sederhana, dengan opsi untuk memilih jumlah cupcakes, rasa favorit Anda, dan tanggal pengambilan. 
 
+## Fitur Utama
+- Pemesanan mudah dan cepat.
+- Pilihan beragam rasa untuk memenuhi selera Anda.
+- Tanggal pengambilan yang dapat disesuaikan.
+- Tampilan ringkasan pesanan yang jelas.
+- Kemampuan untuk berbagi pesanan dengan aplikasi lain.
 
-Pre-requisites
---------------
-* Experience with Kotlin syntax.
-* How to create and run a project in Android Studio.
-* How to create composable functions 
-* TODO
+## Persyaratan Awal
+Sebelum Anda mulai menggunakan aplikasi ini, pastikan Anda memiliki pengetahuan dasar tentang:
+- Sintaksis Kotlin.
+- Cara membuat dan menjalankan proyek di Android Studio.
+- Bagaimana cara membuat fungsi komposabel.
 
+## Memulai
+Untuk memulai menggunakan Aplikasi Cupcake, ikuti langkah-langkah berikut:
+1. Pasang Android Studio jika Anda belum melakukannya.
+2. Unduh contoh aplikasi ini.
+3. Impor contoh aplikasi ke Android Studio.
+4. Bangun dan jalankan contoh aplikasi.
 
-Getting Started
----------------
-1. Install Android Studio, if you don't already have it.
-2. Download the sample.
-3. Import the sample into Android Studio.
-4. Build and run the sample.
+Nikmati pengalaman memesan cupcakes dengan Aplikasi Cupcake kami! Jika Anda memiliki pertanyaan atau masukan, jangan ragu untuk menghubungi kami.
+
+Terima kasih telah memilih Aplikasi Cupcake!
