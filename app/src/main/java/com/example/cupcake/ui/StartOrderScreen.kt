@@ -43,9 +43,7 @@ import com.example.cupcake.R
 import com.example.cupcake.data.DataSource
 
 /**
- * Composable that allows the user to select the desired cupcake quantity and expects
- * [onNextButtonClicked] lambda that expects the selected quantity and triggers the navigation to
- * next screen
+Komposable ini berfungsi untuk pelanggan yang ingin memilih jumlah cupcake yang ingin dipesan.
  */
 @Composable
 fun StartOrderScreen(
@@ -95,8 +93,7 @@ fun StartOrderScreen(
 }
 
 /**
- * Customizable button composable that displays the [labelResourceId]
- * and triggers [onClick] lambda when this composable is clicked
+Composable yang apabila di klik dia akan menampilkan jumlah cupcake
  */
 @Composable
 fun SelectQuantityButton(
