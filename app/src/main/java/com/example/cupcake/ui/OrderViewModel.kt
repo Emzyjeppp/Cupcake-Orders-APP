@@ -26,10 +26,10 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 
-/** Price for a single cupcake */
+/** kode ini untuk menentukan harga per 1 cupcake */
 private const val PRICE_PER_CUPCAKE = 2.00
 
-/** Additional cost for same day pickup of an order */
+/** kode ini juga untuk menentukan harga per 1 cupcake jika dipesan di hari yang sama */
 private const val PRICE_FOR_SAME_DAY_PICKUP = 3.00
 
 /**
@@ -57,8 +57,7 @@ class OrderViewModel : ViewModel() {
     }
 
     /**
-     * Set the [desiredFlavor] of cupcakes for this order's state.
-     * Only 1 flavor can be selected for the whole order.
+     * Kode ini untuk mengatur rasa cupcake yang ingin dipesan oleh pelanggan, namun disini hanya bisa memilih satu rasa
      */
     fun setFlavor(desiredFlavor: String) {
         _uiState.update { currentState ->
@@ -67,7 +66,7 @@ class OrderViewModel : ViewModel() {
     }
 
     /**
-     * Set the [pickupDate] for this order's state and update the price
+     * kode ini untuk mengatur tanggal pemesanan cupcake
      */
     fun setDate(pickupDate: String) {
         _uiState.update { currentState ->
@@ -79,21 +78,21 @@ class OrderViewModel : ViewModel() {
     }
 
     /**
-     * Reset the order state
+     * kode ini untuk reset order
      */
     fun resetOrder() {
         _uiState.value = OrderUiState(pickupOptions = pickupOptions())
     }
 
     /**
-     * Returns the calculated price based on the order details.
+     * kode ini berfungsi untuk mengembalikan harga yang dihitung berdasarkan detail pesanan pelanggan.
      */
     private fun calculatePrice(
         quantity: Int = _uiState.value.quantity,
         pickupDate: String = _uiState.value.date
     ): String {
         var calculatedPrice = quantity * PRICE_PER_CUPCAKE
-        // If the user selected the first option (today) for pickup, add the surcharge
+        // kode ini berfungsi apabila pengguna memilih opsi pertama ( yaitu hari ini) untuk pengambilan, tambahkan biaya tambahan pada pesanan langganan.
         if (pickupOptions()[0] == pickupDate) {
             calculatedPrice += PRICE_FOR_SAME_DAY_PICKUP
         }
@@ -102,13 +101,13 @@ class OrderViewModel : ViewModel() {
     }
 
     /**
-     * Returns a list of date options starting with the current date and the following 3 dates.
+     * kode ini berfungsi untuk Mengembalikan daftar opsi tanggal yang dimulai dengan tanggal saat ini dan tiga tanggal berikutnya.
      */
     private fun pickupOptions(): List<String> {
         val dateOptions = mutableListOf<String>()
         val formatter = SimpleDateFormat("E MMM d", Locale.getDefault())
         val calendar = Calendar.getInstance()
-        // add current date and the following 3 dates.
+        // kode ini bertujuan untuk menambahkan tanggal saat ini dan tiga tanggal berikutnya di detail pesanan pelanggan.
         repeat(4) {
             dateOptions.add(formatter.format(calendar.time))
             calendar.add(Calendar.DATE, 1)
